@@ -1,0 +1,17 @@
+1. channels - orders - deliveries - drivers
+channel_id
+delivery_order_id
+driver_id
+
+2. payments - orders - stores - hubs
+payment_order_id
+store_id
+hub_id
+
+payments 7247
+orders 7000
+deliveries 7178
+drivers 4824
+stores 951
+channels 39
+hubs 30

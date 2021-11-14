@@ -1,0 +1,86 @@
+# Judul Dataset :
+Delivery Center: Food & Goods orders in Brazil
+
+# Deskripsi
+Dataset ini merupakan record operasional pusat pengiriman di Brazil. Pusat Pengiriman adalah platform yang mengintegrasikan pengecer dan pasar, menciptakan ekosistem yang sehat untuk penjualan barang (produk) dan makanan (makanan) di ritel Brasil. Datadet berisi data pesanan dan pengiriman yang diproses oleh Pusat Pengiriman antara bulan Januari dan April 2021.
+
+# Detail Attribut:
+Channels
+Kumpulan data yang memiliki informasi tentang saluran penjualan (pasar) tempat barang dan makanan yang dijual pengecer.
+- channel_id : Id channel
+- channel_name : Nama channel
+- channel_type : Jenis/Tipe channel
+
+deliveries
+Kumpulan data yang memiliki informasi tentang pengiriman yang dilakukan oleh pengiriman mitra.
+- driver_id : Id pengiriman
+- delivery_order_id : Id pengiriman pesanan
+- delivery_id : Id pengirim yang melakukan pengiriman
+- delivery_distance_meters : Jarak tempuh
+- delivery_status : Status pengiriman
+
+drivers
+Kumpulan data yang memiliki informasi tentang mitra pengiriman mitra. Pihak yang mengirimkan ke rumah konsumen.
+- driver_id : Id orang yang mengirim
+- driver_modal : jenis modal logistik
+- driver_type : Jenis/tipe pengiriman
+
+hubs
+Dataset yang memiliki informasi tentang hub Pusat Pengiriman. Hub adalah pusat distribusi pesanan dan tempat pengiriman berasal.
+- hub_id : Id hub pusat pengiriman
+- hub_name : Nama hub pusat pengiriman
+- hub_city : Kota pusat pengiriman
+- hub_state : Negara bagian/provinsi hub pusat pengiriman
+- hub_latitude : Posisi lintang hub pusat pengiriman
+- hub_longitude : Posisi busur hub pusat pengiriman
+
+Orders
+Kumpulan data yang berisi informasi tentang penjualan yang diproses melalui platform Pusat Pengiriman.
+- order_id : Id order yang dilakukan
+- store_id : Id penjual/toko
+- channel_id : Id channel
+- payment_order_id : Id pembayaran
+- delivery_order_id : Id pengiriman pesanan
+- order_status : Status pemesanan
+- order_amount : Jumlah pemesanan
+- order_delivery_fee : Pendapatan pengiriman atau jumlah harga yang dibayar
+- order_delivery_cost : Biaya pengiriman
+- order_created_hour : Waktu pemesanan dalam jam
+- order_created_minute : Waktu pemesanan dalam menit
+- order_created_day : Waktu pemesanan dalam hari
+- order_created_month : Waktu pemesanan dalam jam
+- order_created_year : Waktu pemesanan dalam jam
+- order_moment_created : Waktu pemesanan
+- order_moment_accepted : Waktu pesanan diterima
+- order_moment_ready : Waktu pesanan siap diantarkan
+- order_moment_collected : Waktu pesanan terkumpul
+- order_moment_in_expedition : Waktu pesanan di ekspedisi
+- order_moment_delivering : Waktu pesanan dalam pengiriman
+- order_moment_delivered : Waktu ketika pesanan terkirim
+- order_moment_finished : Waktu pesanan selesai dikirimkan
+- order_metric_collected_time : Metrik waktu pengumpulan pesanan
+- order_metric_paused_time : Metrik waktu jeda pesanan
+- order_metric_production_time : Metrik waktu produksi pesanan
+- order_metric_walking_time : Metrik waktu berjalannya pesanan
+- order_metric_expediton_speed_time : Metrik kecepatan waktu ekspedisi pesanan
+- order_metric_transit_time : Metrik waktu transit pesanan
+- order_metric_cycle_time : Metrik siklus waktu  pesanan
+
+payments
+Kumpulan data yang memiliki informasi tentang pembayaran yang dilakukan ke Pusat Pengiriman.
+- payment_id : Id pembayaran
+- payment_order_id : Id pesanan terkait dengan pembayaran
+- payment_amount : Jumlah pembayaran
+- payment_fee : Jumlah diskon
+- payment_method : Cara pembayaran
+- payment_status : Status pembayaran
+
+Stores
+Dataset yang memiliki informasi tentang pengecer. Mereka menggunakan Platform Pusat Pengiriman untuk menjual barang-barang mereka (baik dan/atau makanan) di pasar.
+- store_id : Id toko/pedagang
+- hub_id : Id hub pusat pesanan yang terkait dengan toko/pedagang
+- store_name : Nama toko/pedagang
+- store_segment : Segmen toko/pedagang
+- store_plan_price : Nilai paket pedagang/toko
+- store_latitude : Letak garis lintang toko
+- Store_longitude : Letak garis busur toko
